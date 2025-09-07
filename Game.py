@@ -150,7 +150,7 @@ while True:
     # TODO Task 4: Add your name
     name = "Josue Ortega"
 
-    timer -= 0.01
+    timer -= 0.01 #Timer for CPU/BOT Movement change
     print(timer)
     if timer <= 0:
         movement_change = random.randint(1, 10)

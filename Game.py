@@ -75,7 +75,7 @@ def cpu_movement():
 
     if player2joined == False:
         if movement_change < 5:
-            player2.x += ball_speed_x
+            player2.x += ball_speed_x #If change is < 5 it will follow the ball's positive x pos, if its > 5 it will follow the negative x pos of the ball
         elif movement_change > 5:
             player2.x -= ball_speed_x
 

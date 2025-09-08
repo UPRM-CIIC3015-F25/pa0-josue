@@ -12,7 +12,7 @@ def ball_movement():
 
     # Start the ball movement when the game begins
     # TODO Task 5 Create a Merge Conflict
-    speed = 7
+    speed = 10
     if start:
         ball_speed_x = speed * random.choice((1, -1))  # Randomize initial horizontal direction
         ball_speed_y = speed * random.choice((1, -1))  # Randomize initial vertical direction
@@ -25,6 +25,9 @@ def ball_movement():
             p1_score = 1  # Increase player 1's score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
+            var = pygame.mixer.Sound('file name')
+            pygame.mixer.Sound.play(var)
+
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
@@ -75,7 +78,7 @@ def cpu_movement():
 
     if player2joined == False:
         if movement_change < 5:
-            player2.x += ball_speed_x #If change is < 5 it will follow the ball's positive x pos, if its > 5 it will follow the negative x pos of the ball
+            player2.x += ball_speed_x
         elif movement_change > 5:
             player2.x -= ball_speed_x
 
@@ -153,7 +156,7 @@ while True:
     # TODO Task 4: Add your name
     name = "Josue Ortega"
 
-    timer -= 0.01 #Timer for CPU/BOT Movement change
+    timer -= 0.01
     print(timer)
     if timer <= 0:
         movement_change = random.randint(1, 10)
@@ -215,7 +218,6 @@ while True:
     screen.blit(p1_hs_txt, (screen_width/2 - 100, 630 + 30))
 
     player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey)
-    p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey)
     screen.blit(player2_score, (screen_width/2 - 65, 40))
     screen.blit(p2_hs_txt, (screen_width/2 - 100, 5))
 

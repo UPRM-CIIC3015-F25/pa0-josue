@@ -1,4 +1,6 @@
-import pygame, sys, random, pillow
+import pygame, sys, random
+from pygame.key import start_text_input
+
 
 def ball_movement():
     """
@@ -17,23 +19,22 @@ def ball_movement():
     # TODO Task 5 Create a Merge Conflict
     speed = 10
     if start:
-        ball_speed_x = speed * random.choice((1, -1))  # Randomize initial horizontal direction
         ball_speed_y = speed * random.choice((1, -1))  # Randomize initial vertical direction
         start = False
 
     # Ball collision with the player paddle
     if ball.colliderect(player):
-        if abs(ball.bottom - player.top) < 10:  # Check if ball hits the top of the paddle
+        if abs(ball.bottom + player.top) > 10:  # Check if ball hits the top of the paddle
             # TODO Task 2: Fix score to increase by 1
             p1_score += 1  # Increase player 1's score
-            ball_speed_y *= -1  # Reverse ball's vertical direction
+            ball_speed_y *= -1.01  # Reverse ball's vertical direction and increases speed
             # TODO Task 6: Add sound effects HERE
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
-
+ 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
-        if abs(ball.top - player2.bottom) < 10:
-            ball_speed_y *= -1
+        if abs(ball.top + player2.bottom) > 10: # Check if ball hits the top of the paddle
+            ball_speed_y *= -1.01 # Reverse ball's vertical direction and increases speed
             p2_score += 1  # Increase player 2's score
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 2
 
@@ -82,7 +83,7 @@ def cpu_movement():
 
     if player2joined == False:
         if movement_change < 5:
-            player2.x += ball_speed_x
+            player2.x += ball_speed_x # Bot follows the ball's x pos but is included with sudden direction changes
         elif movement_change > 5:
             player2.x -= ball_speed_x
 
@@ -91,15 +92,16 @@ def restart():
     """
     Resets the ball and player scores to the initial state.
     """
-    global ball_speed_x, ball_speed_y, p1_score, p2_score
+    global ball_speed_x, ball_speed_y, p1_score, p2_score, start_text
     ball.center = (screen_width / 2, screen_height / 2)  # Reset ball position to center
     ball_speed_y, ball_speed_x = 0, 0  # Stop ball movement
+    start_text.set_alpha(250) # If the player hasn't served yet or pressed space then the text will appear until then
 
 # General setup
 pygame.mixer.pre_init(44100 * 2, -16, 1, 1024)
 pygame.mixer.init()
-pygame.mixer.music.load('pongbg.wav')
-pygame.mixer.music.play(-1, 0, 200)
+pygame.mixer.music.load('pongbg.wav') # Background music
+pygame.mixer.music.play(-1, 0, 200) # Background music loop
 pygame.init()
 clock = pygame.time.Clock()
 
@@ -173,9 +175,8 @@ while True:
     # TODO Task 4: Add your name
     name = "Josue Ortega"
 
-    timer -= 0.01
-    print(timer)
-    if timer <= 0:
+    timer -= 0.01 # Custom made timer because python's timer interfered with the rest of the code and the app's launch and performance
+    if timer <= 0: # If the timer ended it will loop
         movement_change = random.randint(1, 10)
         timer = 3
 
@@ -189,10 +190,10 @@ while True:
             if event.key == pygame.K_RIGHT:
                 player_speed += 6  # Move paddle right
             if event.key == pygame.K_a:
-                player2joined = True
+                player2joined = True # Player 2 takes over BOT/CPU
                 player2_speed -= 6
             if event.key == pygame.K_d:
-                player2joined = True
+                player2joined = True # Player 2 takes over BOT/CPU
                 player2_speed += 6
             if event.key == pygame.K_SPACE:
                 start = True  # Start the ball movement
@@ -203,10 +204,10 @@ while True:
             if event.key == pygame.K_RIGHT:
                 player_speed -= 6  # Stop moving right
             if event.key == pygame.K_a:
-                player2joined = True
+                player2joined = True # Player 2 takes over BOT/CPU
                 player2_speed += 6
             if event.key == pygame.K_d:
-                player2joined = True
+                player2joined = True # Player 2 takes over BOT/CPU
                 player2_speed -= 6
 
     # Game Logic
@@ -214,23 +215,22 @@ while True:
     player_movement()
     cpu_movement()
 
-    # Visuals
-    black = pygame.Color('black')
-    light_grey = pygame.Color('grey83')
-    gold = pygame.Color('gold')
-
+    # Background
     screen.fill(bg_color)  # Clear screen with background color
     screen.blit(table_size, (0, 0))
 
+    # Paddles
     pygame.draw.rect(screen, light_grey, player)  # Draw player paddle
     pygame.draw.rect(screen, light_grey, player2) # draw player 2's paddle
 
     # TODO Task 3: Change the Ball Color
     pygame.draw.ellipse(screen, white, ball)  # Draw ball
 
+    # Bars
     pygame.draw.rect(screen, black, bar)  # TOP BAR
     pygame.draw.rect(screen, black, bar2)  # BOTTOM BAR
 
+    # Player 1 Score
     p1_score_txt = basic_font.render(f'Score: {p1_score}', False, light_grey)  # Render player score
     p1_hs_txt = basic_font.render(f'Highscore: {p1_highscore}', False, light_grey)
     screen.blit(p1_score_txt, (screen_width/2 - 65, 630))  # Display score on screen

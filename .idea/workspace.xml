@@ -7,7 +7,6 @@
     <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="Fixed Teammate B Paddle sound Filename">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hit_paddle.wav" beforeDir="false" afterPath="$PROJECT_DIR$/hit_paddle.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +23,12 @@
     &quot;assignee&quot;: &quot;isabellabaniaga&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/UPRM-CIIC3015-F25/pa0-josue&quot;,
-    &quot;accountId&quot;: &quot;9ab892a5-03eb-4042-85e6-bdd4f13b3ead&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/UPRM-CIIC3015-F25/pa0-josue",
+    "accountId": "f10ced15-5f6f-4da2-b31a-3dd52b8f3b42"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -38,25 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Game.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bania/PycharmProjects/pa0-josue&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Game.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/bania/PycharmProjects/pa0-josue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bania\PycharmProjects\pa0-josue" />
@@ -95,7 +97,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7e47963ff851-f0eec537fc84-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.23892.515" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PY-252.25557.178" />
+        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +109,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757095937566</updated>
+      <workItem from="1757303905084" duration="7117000" />
     </task>
     <task id="LOCAL-00001" summary="TASK 5 COMPLETED">
       <option name="closed" value="true" />
@@ -211,8 +215,83 @@
       <option name="project" value="LOCAL" />
       <updated>1757302170004</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed Teammate B Paddle sound Filename">
+      <option name="closed" value="true" />
+      <created>1757303826655</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1757303826655</updated>
+    </task>
+    <task id="LOCAL-00015" summary="BONUS: Added a start/servetext">
+      <option name="closed" value="true" />
+      <created>1757310892425</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1757310892425</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Bonus: Added a text to show how player 2 can join">
+      <option name="closed" value="true" />
+      <created>1757310918106</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1757310918106</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Changed the ball's color to white">
+      <option name="closed" value="true" />
+      <created>1757310943199</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757310943199</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Bonus: Added a table for the background">
+      <option name="closed" value="true" />
+      <created>1757310961453</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1757310961453</updated>
+    </task>
+    <task id="LOCAL-00019" summary="If pressed space then the text disappears">
+      <option name="closed" value="true" />
+      <created>1757310983994</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1757310983994</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Bonus: Added a text to show how player 2 can join">
+      <option name="closed" value="true" />
+      <created>1757311021044</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757311021044</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Bonus: Added a serve/space text at the start">
+      <option name="closed" value="true" />
+      <created>1757311039938</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757311039938</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Bonus: Added a pong table png for the background">
+      <option name="closed" value="true" />
+      <created>1757311065258</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1757311065258</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">
@@ -299,10 +378,17 @@
     <MESSAGE value="Fixed P2 Highscore" />
     <MESSAGE value="Added Sound (From Teammate B, I just fixed the filename)" />
     <MESSAGE value="Fixed Teammate B Paddle sound Filename" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Teammate B Paddle sound Filename" />
+    <MESSAGE value="BONUS: Added a start/servetext" />
+    <MESSAGE value="Changed the ball's color to white" />
+    <MESSAGE value="Bonus: Added a table for the background" />
+    <MESSAGE value="If pressed space then the text disappears" />
+    <MESSAGE value="Bonus: Added a text to show how player 2 can join" />
+    <MESSAGE value="Bonus: Added a serve/space text at the start" />
+    <MESSAGE value="Bonus: Added a pong table png for the background" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bonus: Added a pong table png for the background" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pa0_josue$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1757296549121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pa0_josue$Game.coverage" NAME="Game Coverage Results" MODIFIED="1757303584167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pa0_josue$Game.coverage" NAME="Game Coverage Results" MODIFIED="1757310716953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

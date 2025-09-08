@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="TASK 2 COMPLETED" />
+    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="TASK 2 COMPLETED(fix score)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757339714489</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="TASK 2 COMPLETED(fix score)">
+      <option name="closed" value="true" />
+      <created>1757339778155</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1757339778155</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,7 +311,19 @@
     <MESSAGE value="Fixed P2 Highscore" />
     <MESSAGE value="TASK 6 DONE" />
     <MESSAGE value="TASK 2 COMPLETED" />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK 2 COMPLETED" />
+    <MESSAGE value="TASK 2 COMPLETED(fix score)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK 2 COMPLETED(fix score)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Game.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pa0_josue$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1757296549121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

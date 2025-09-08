@@ -22,7 +22,7 @@ def ball_movement():
     if ball.colliderect(player):
         if abs(ball.bottom - player.top) < 10:  # Check if ball hits the top of the paddle
             # TODO Task 2: Fix score to increase by 1
-            p1_score += 1  # Increase player 1's score
+            p1_score = 1  # Increase player 1's score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
 
@@ -144,6 +144,9 @@ timer = 3
 movement_change = 0
 
 start = False  # Indicates if the game has started
+
+bg = pygame.mixer.Sound('pongbg.mp3')
+pygame.mixer.Sound.play(bg, -1)
 
 # Main game loop
 while True:

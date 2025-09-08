@@ -143,6 +143,9 @@ p1_score = 0
 p2_score = 0
 basic_font = pygame.font.Font('freesansbold.ttf', 32)  # Font for displaying score
 
+# Press Space to start text
+start_text = basic_font.render('Press SPACE to serve', False, white)
+
 # Player 2 will be a cpu unless either the "A" key or "D" key is pressed
 player2joined = False
 

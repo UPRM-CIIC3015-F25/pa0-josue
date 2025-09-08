@@ -22,7 +22,7 @@ def ball_movement():
     if ball.colliderect(player):
         if abs(ball.bottom - player.top) < 10:  # Check if ball hits the top of the paddle
             # TODO Task 2: Fix score to increase by 1
-            p1_score += 1  # Increase player 1's score
+            p1_score = 1  # Increase player 1's score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
 
@@ -94,6 +94,7 @@ def restart():
 # General setup
 pygame.mixer.pre_init(44100, -16, 1, 1024)
 pygame.init()
+pygame.mixer.init()
 clock = pygame.time.Clock()
 
 # Main Window setup
@@ -144,6 +145,9 @@ timer = 3
 movement_change = 0
 
 start = False  # Indicates if the game has started
+
+pygame.mixer.music.load('pongbg.mp3')
+pygame.mixer.music.play()
 
 # Main game loop
 while True:
@@ -214,6 +218,7 @@ while True:
 
     player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey)
     screen.blit(player2_score, (screen_width/2 - 65, 40))
+    screen.blit(p2_hs_txt, (screen_width/2 - 100, 5))
 
     # Update display
     pygame.display.flip()

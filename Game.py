@@ -11,7 +11,7 @@ def ball_movement():
     ball.y += ball_speed_y
 
     # Ball sound
-    ball_sound = pygame.mixer.Sound("hit_sound.wav")
+    ball_sound = pygame.mixer.Sound("hit_paddle.wav")
 
     # Start the ball movement when the game begins
     # TODO Task 5 Create a Merge Conflict

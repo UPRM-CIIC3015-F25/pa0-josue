@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="TASK 6 COMPLETED">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="Fixed P2 Highscore">
       <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757301406849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixed P2 Highscore">
+      <option name="closed" value="true" />
+      <created>1757301998691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1757301998691</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +278,8 @@
     <MESSAGE value="Change BG music to WAV file" />
     <MESSAGE value="Commit" />
     <MESSAGE value="TASK 6 COMPLETED" />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK 6 COMPLETED" />
+    <MESSAGE value="Fixed P2 Highscore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed P2 Highscore" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pa0_josue$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1757296549121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

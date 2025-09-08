@@ -218,6 +218,7 @@ while True:
     player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey)
     p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey)
     screen.blit(player2_score, (screen_width/2 - 65, 40))
+    screen.blit(p2_hs_txt, (screen_width/2 - 100, 40))
 
     # Update display
     pygame.display.flip()

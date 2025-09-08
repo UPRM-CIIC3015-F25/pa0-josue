@@ -219,8 +219,15 @@ while True:
     screen.blit(p1_score_txt, (screen_width/2 - 65, 630))  # Display score on screen
     screen.blit(p1_hs_txt, (screen_width/2 - 100, 630 + 30))
 
-    player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey)
-    p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey)
+    # Player 2 Score
+    player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey) # Player 2 Score
+    p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey) # Player 2 Highscore
+
+    if player2joined == True:
+        player2Resize.set_alpha(0)
+    else:
+        player2Resize.set_alpha(250)
+
     screen.blit(player2_score, (screen_width/2 - 65, 40))
     screen.blit(p2_hs_txt, (screen_width/2 - 100, 5))
     screen.blit(player2Resize, (screen_width/2 - 230, 50))

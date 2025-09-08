@@ -1,4 +1,5 @@
 import pygame, sys, random
+from pygame import mixer
 
 def ball_movement():
     """
@@ -10,8 +11,11 @@ def ball_movement():
     ball.x += ball_speed_x
     ball.y += ball_speed_y
 
-    #Ball Sound
-    ball_sound = pygame.mixer.Sound("hit_paddle.wav")
+    pygame.init()  # Inicializa módulos básicos
+    pygame.mixer.init()  # Inicializa el mixer de sonido
+
+    # Ball Sound
+    ball_sound = pygame.mixer.Sound("hit_sound.wav")
 
     # Start the ball movement when the game begins
     # TODO Task 5 Create a Merge Conflict
@@ -28,14 +32,16 @@ def ball_movement():
             p1_score += 1  # Increase player 1's score
             ball_speed_y = -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
-            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
+
+            # cargar sonido.
+            ball_sound.play()
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
-        if abs(ball.top - player2.bottom) < 10:
+        if abs(ball.bottom - player2.top) < 10:
             ball_speed_y = -1
             p2_score += 1  # Increase player 2's score
-            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
+            ball_sound.play()  # Ball sound plays when ball collides with player 1
 
     # Keep Highscore for both players
     if p1_score >= p1_highscore:

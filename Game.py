@@ -93,6 +93,7 @@ def restart():
 # General setup
 pygame.mixer.pre_init(44100, -16, 1, 1024)
 pygame.init()
+pygame.mixer.init()
 clock = pygame.time.Clock()
 
 # Main Window setup

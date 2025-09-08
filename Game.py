@@ -204,6 +204,7 @@ while True:
     gold = pygame.Color('gold')
 
     screen.fill(bg_color)  # Clear screen with background color
+    screen.blit(table_size, (0, 0))
 
     pygame.draw.rect(screen, light_grey, player)  # Draw player paddle
     pygame.draw.rect(screen, light_grey, player2) # draw player 2's paddle

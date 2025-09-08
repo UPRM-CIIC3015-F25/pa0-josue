@@ -209,7 +209,7 @@ while True:
     pygame.draw.rect(screen, light_grey, player2) # draw player 2's paddle
 
     # TODO Task 3: Change the Ball Color
-    pygame.draw.ellipse(screen, gold, ball)  # Draw ball
+    pygame.draw.ellipse(screen, white, ball)  # Draw ball
 
     pygame.draw.rect(screen, black, bar)  # TOP BAR
     pygame.draw.rect(screen, black, bar2)  # BOTTOM BAR

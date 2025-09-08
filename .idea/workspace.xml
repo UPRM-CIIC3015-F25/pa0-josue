@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Game.py">
-      <change afterPath="$PROJECT_DIR$/table.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hit_paddle.wav" beforeDir="false" afterPath="$PROJECT_DIR$/hit_paddle.wav" afterDir="false" />
-    </list>
+    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="TASK 2 COMPLETED" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/bania/PycharmProjects/pa0-josue",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -196,7 +191,31 @@
       <option name="project" value="LOCAL" />
       <updated>1757301998691</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TASK 6 DONE">
+      <option name="closed" value="true" />
+      <created>1757337646042</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1757337646042</updated>
+    </task>
+    <task id="LOCAL-00013" summary="TASK 2 COMPLETED">
+      <option name="closed" value="true" />
+      <created>1757339002420</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1757339002420</updated>
+    </task>
+    <task id="LOCAL-00014" summary="TASK 2 COMPLETED">
+      <option name="closed" value="true" />
+      <created>1757339714489</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1757339714489</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +301,9 @@
     <MESSAGE value="Commit" />
     <MESSAGE value="TASK 6 COMPLETED" />
     <MESSAGE value="Fixed P2 Highscore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed P2 Highscore" />
+    <MESSAGE value="TASK 6 DONE" />
+    <MESSAGE value="TASK 2 COMPLETED" />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK 2 COMPLETED" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pa0_josue$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1757296549121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

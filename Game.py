@@ -91,9 +91,11 @@ def restart():
     p2_score = 0 # Resets player 2's score as well
 
 # General setup
-pygame.mixer.pre_init(44100, -16, 1, 1024)
-pygame.init()
+pygame.mixer.pre_init(44100 * 2, -16, 1, 1024)
 pygame.mixer.init()
+pygame.mixer.music.load('pongbg.mp3')
+pygame.mixer.music.play(-1, 0, 200)
+pygame.init()
 clock = pygame.time.Clock()
 
 # Main Window setup
@@ -144,9 +146,6 @@ timer = 3
 movement_change = 0
 
 start = False  # Indicates if the game has started
-
-pygame.mixer.music.load('pongbg.mp3')
-pygame.mixer.music.play(-1)
 
 # Main game loop
 while True:

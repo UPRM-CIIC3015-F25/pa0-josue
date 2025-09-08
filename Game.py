@@ -10,7 +10,7 @@ def ball_movement():
     ball.x += ball_speed_x
     ball.y += ball_speed_y
 
-    # Ball sound
+    #Ball Sound
     ball_sound = pygame.mixer.Sound("hit_paddle.wav")
 
     # Start the ball movement when the game begins
@@ -28,14 +28,14 @@ def ball_movement():
             p1_score += 1  # Increase player 1's score
             ball_speed_y = -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
-            pygame.mixer.Sound.play("hit_paddle.wav")  # Ball sound plays when ball collides with player 1
+            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
         if abs(ball.top - player2.bottom) < 10:
             ball_speed_y = -1
             p2_score += 1  # Increase player 2's score
-            pygame.mixer.Sound.play("hit_paddle.wav")  # Ball sound plays when ball collides with player 1
+            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
 
     # Keep Highscore for both players
     if p1_score >= p1_highscore:

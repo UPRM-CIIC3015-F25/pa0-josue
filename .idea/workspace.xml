@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="Fixed Teammate B Paddle sound Filename">
+    <list default="true" id="d2d00326-153e-463b-8073-eca342626cd0" name="Changes" comment="Task: Organized Code and made it readable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Game.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1757095937566</updated>
-      <workItem from="1757303905084" duration="7117000" />
+      <workItem from="1757303905084" duration="7367000" />
     </task>
     <task id="LOCAL-00001" summary="TASK 5 COMPLETED">
       <option name="closed" value="true" />
@@ -287,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757311065258</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Task: Organized Code and made it readable">
+      <option name="closed" value="true" />
+      <created>1757311114300</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1757311114300</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,10 +392,11 @@
     <MESSAGE value="Bonus: Added a text to show how player 2 can join" />
     <MESSAGE value="Bonus: Added a serve/space text at the start" />
     <MESSAGE value="Bonus: Added a pong table png for the background" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bonus: Added a pong table png for the background" />
+    <MESSAGE value="Task: Organized Code and made it readable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task: Organized Code and made it readable" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pa0_josue$Pong.coverage" NAME="Pong Coverage Results" MODIFIED="1757296549121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pa0_josue$Game.coverage" NAME="Game Coverage Results" MODIFIED="1757310716953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pa0_josue$Game.coverage" NAME="Game Coverage Results" MODIFIED="1757311305965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

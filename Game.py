@@ -30,7 +30,7 @@ def ball_movement():
             ball_speed_y *= -1.01  # Reverse ball's vertical direction and increases speed
             # TODO Task 6: Add sound effects HERE
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
- 
+
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
         if abs(ball.top + player2.bottom) > 10: # Check if ball hits the top of the paddle
@@ -82,7 +82,7 @@ def cpu_movement():
     global movement_change
 
     if player2joined == False:
-        if movement_change < 5:
+        if movement_change < 5: # Movement change is like a dice, it picks between 1-10, with that it chooses the direction to go (RNG).
             player2.x += ball_speed_x # Bot follows the ball's x pos but is included with sudden direction changes
         elif movement_change > 5:
             player2.x -= ball_speed_x

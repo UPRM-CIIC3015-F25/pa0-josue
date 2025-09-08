@@ -25,6 +25,8 @@ def ball_movement():
             p1_score = 1  # Increase player 1's score
             ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
+            var = pygame.mixer.Sound('file name')
+            pygame.mixer.Sound.play(var)
 
 
     # Ball collision with player 2's paddle

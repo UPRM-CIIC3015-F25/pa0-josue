@@ -1,5 +1,4 @@
 import pygame, sys, random
-from pygame import mixer
 
 def ball_movement():
     """
@@ -42,6 +41,13 @@ def ball_movement():
             ball_speed_y = -1
             p2_score += 1  # Increase player 2's score
             ball_sound.play()  # Ball sound plays when ball collides with player 1
+
+    # Ball collision with player 2's paddle
+    if ball.colliderect(player2):
+        if abs(ball.top - player2.bottom) < 10:
+            ball_speed_y = -1
+            p2_score += 1  # Increase player 2's score
+            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
 
     # Keep Highscore for both players
     if p1_score >= p1_highscore:

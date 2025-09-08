@@ -145,8 +145,8 @@ movement_change = 0
 
 start = False  # Indicates if the game has started
 
-bg = pygame.mixer.Sound('pongbg.mp3')
-pygame.mixer.Sound.play(bg, -1)
+pygame.mixer.music.load('pongbg.mp3')
+pygame.mixer.music.play()
 
 # Main game loop
 while True:
@@ -218,7 +218,7 @@ while True:
     player2_score = basic_font.render(f'Score: {p2_score}', False, light_grey)
     p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey)
     screen.blit(player2_score, (screen_width/2 - 65, 40))
-    screen.blit(p2_hs_txt, (screen_width/2 - 100, 40))
+    screen.blit(p2_hs_txt, (screen_width/2 - 100, 5))
 
     # Update display
     pygame.display.flip()

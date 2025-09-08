@@ -146,7 +146,11 @@ basic_font = pygame.font.Font('freesansbold.ttf', 32)  # Font for displaying sco
 # Player 2 will be a cpu unless either the "A" key or "D" key is pressed
 player2joined = False
 
-# CPU Movement timer (So the movement is more polished)
+# Player 2 Join Text
+player2Text = basic_font.render('Player 2: Press A or D to join', False, light_grey) # Player 2 Join Text
+player2Resize = pygame.transform.scale(player2Text, (150, 15))
+
+# CPU Movement timer for the sudden move changes (check loop)
 timer = 3
 movement_change = 0
 

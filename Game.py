@@ -38,14 +38,14 @@ def ball_movement():
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
         if abs(ball.bottom - player2.top) < 10:
-            ball_speed_y = -1
+            ball_speed_x *= -1
             p2_score += 1  # Increase player 2's score
             ball_sound.play()  # Ball sound plays when ball collides with player 1
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
         if abs(ball.top - player2.bottom) < 10:
-            ball_speed_y = -1
+            ball_speed_x *= -1
             p2_score += 1  # Increase player 2's score
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
 

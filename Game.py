@@ -223,6 +223,10 @@ while True:
     p2_hs_txt = basic_font.render(f'Highscore: {p2_highscore}', False, light_grey)
     screen.blit(player2_score, (screen_width/2 - 65, 40))
     screen.blit(p2_hs_txt, (screen_width/2 - 100, 5))
+    screen.blit(player2Resize, (screen_width/2 - 230, 50))
+
+    # Start/Server Text
+    screen.blit(start_text, (screen_width/2 - 160 ,screen_height/2 - 75))
 
     # Update display
     pygame.display.flip()

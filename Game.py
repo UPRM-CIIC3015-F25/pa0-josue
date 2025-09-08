@@ -25,7 +25,7 @@ def ball_movement():
 
     # Ball collision with the player paddle
     if ball.colliderect(player):
-        if abs(ball.bottom + player.top) > 10:  # Check if ball hits the top of the paddle
+        if abs(ball.bottom - player.top) < 10:  # Check if ball hits the top of the paddle
             # TODO Task 2: Fix score to increase by 1
             p1_score += 1  # Increase player 1's score
             ball_speed_y *= -1.01  # Reverse ball's vertical direction and increases speed
@@ -34,7 +34,7 @@ def ball_movement():
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
-        if abs(ball.top + player2.bottom) > 10: # Check if ball hits the top of the paddle
+        if abs(ball.top - player2.bottom) < 10: # Check if ball hits the top of the paddle
             ball_speed_y *= -1.01 # Reverse ball's vertical direction and increases speed
             p2_score += 1  # Increase player 2's score
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 2
@@ -187,7 +187,7 @@ while True:
             sys.exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                player_speed -= 6  # Move paddle left
+                player_speed -= 6
             if event.key == pygame.K_RIGHT:
                 player_speed += 6  # Move paddle right
             if event.key == pygame.K_a:

@@ -181,6 +181,7 @@ while True:
                 player2_speed += 6
             if event.key == pygame.K_SPACE:
                 start = True  # Start the ball movement
+                start_text.set_alpha(0) # Serve/Start Text disappears
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT:
                 player_speed += 6  # Stop moving left

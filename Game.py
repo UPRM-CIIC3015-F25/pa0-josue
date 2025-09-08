@@ -146,7 +146,7 @@ movement_change = 0
 start = False  # Indicates if the game has started
 
 pygame.mixer.music.load('pongbg.mp3')
-pygame.mixer.music.play()
+pygame.mixer.music.play(-1)
 
 # Main game loop
 while True:

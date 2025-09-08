@@ -93,7 +93,7 @@ def restart():
 # General setup
 pygame.mixer.pre_init(44100 * 2, -16, 1, 1024)
 pygame.mixer.init()
-pygame.mixer.music.load('pongbg.mp3')
+pygame.mixer.music.load('pongbg.wav')
 pygame.mixer.music.play(-1, 0, 200)
 pygame.init()
 clock = pygame.time.Clock()

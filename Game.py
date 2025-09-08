@@ -1,4 +1,4 @@
-import pygame, sys, random
+import pygame, sys, random, pillow
 
 def ball_movement():
     """
@@ -11,7 +11,7 @@ def ball_movement():
     ball.y += ball_speed_y
 
     #Ball Sound
-    ball_sound = pygame.mixer.Sound("hit_paddle.wav")
+    ball_sound = pygame.mixer.Sound('hit_paddle.wav')
 
     # Start the ball movement when the game begins
     # TODO Task 5 Create a Merge Conflict
@@ -26,16 +26,16 @@ def ball_movement():
         if abs(ball.bottom - player.top) < 10:  # Check if ball hits the top of the paddle
             # TODO Task 2: Fix score to increase by 1
             p1_score += 1  # Increase player 1's score
-            ball_speed_y = -1  # Reverse ball's vertical direction
+            ball_speed_y *= -1  # Reverse ball's vertical direction
             # TODO Task 6: Add sound effects HERE
             pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
 
     # Ball collision with player 2's paddle
     if ball.colliderect(player2):
         if abs(ball.top - player2.bottom) < 10:
-            ball_speed_y = -1
+            ball_speed_y *= -1
             p2_score += 1  # Increase player 2's score
-            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 1
+            pygame.mixer.Sound.play(ball_sound)  # Ball sound plays when ball collides with player 2
 
     # Keep Highscore for both players
     if p1_score >= p1_highscore:
@@ -45,6 +45,7 @@ def ball_movement():
 
     # If the top of the ball is out of the top boundary then it resets (This is for the multiplayer functionality)
     if ball.top <= 0:
+        p2_score = 0
         restart()  # Reverse ball's vertical direction
 
     # Ball collision with left and right boundaries
@@ -53,6 +54,7 @@ def ball_movement():
 
     # Ball goes below the bottom boundary (missed by player)
     if ball.bottom > screen_height:
+        p1_score = 0
         restart()  # Reset the game
 
 def player_movement():
@@ -92,8 +94,6 @@ def restart():
     global ball_speed_x, ball_speed_y, p1_score, p2_score
     ball.center = (screen_width / 2, screen_height / 2)  # Reset ball position to center
     ball_speed_y, ball_speed_x = 0, 0  # Stop ball movement
-    p1_score = 0  # Reset player score
-    p2_score = 0 # Resets player 2's score as well
 
 # General setup
 pygame.mixer.pre_init(44100 * 2, -16, 1, 1024)
